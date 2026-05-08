@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTL Premium - Paket Seçimi</title>
+    <style>
+        body {
+            background-color: #0f1114;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px 10px;
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .header h1 { color: #ffcc00; font-size: 2.2rem; }
+        
+        .pricing-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
 
+        /* İstediğin Kutu Tasarımı */
+        .pricing-card {
+            background-color: #16181d;
+            border-radius: 20px;
+            padding: 30px;
+            width: 260px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid #222;
+            transition: transform 0.3s ease;
+        }
+        .pricing-card:hover { transform: translateY(-5px); border-color: #ffcc00; }
+
+        .pkg-name { font-size: 1.3rem; color: #e0e0e0; margin-bottom: 15px; }
+        .pkg-price { font-size: 2.4rem; font-weight: bold; margin-bottom: 20px; }
+        .pkg-price span { font-size: 1.1rem; color: #ffcc00; }
+
+        .feature-list {
+            text-align: left;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .feature-list li {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #cfcfcf;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #ffcc00;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .buy-button {
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 14px;
+            border-radius: 12px;
+            transition: 0.3s;
+            display: block;
+        }
+        .buy-button:hover { background-color: #e6b800; transform: scale(1.02); }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+            text-decoration: none;
+        }
+        .back-btn:hover { color: #fff; }
+
+        .badge {
+            background: #ffcc00;
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>YTL Premium Ayrıcalıkları</h1>
+        <p>Sunucunu hainlere karşı tam korumalı çelik kafese dönüştür.</p>
+    </div>
+
+    <div class="pricing-wrapper">
+        <div class="pricing-card">
+            <div>
+                <div class="pkg-name">Aylık Premium</div>
+                <div class="pkg-price">165 ₺ <span>/ Ay</span></div>
+                <ul class="feature-list">
+                    <li>Tüm UltraSecurity Özellikleri</li>
+                    <li>30 Günlük VIP Maaş Desteği</li>
+                    <li>Özel Rol ve Renk Değişimi</li>
+                    <li>Siber İstihbarat Raporu</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">Hemen Satın Al</a>
+        </div>
+
+        <div class="pricing-card">
+            <div>
+                <div class="badge">EKONOMİK</div>
+                <div class="pkg-name">3 Aylık Premium</div>
+                <div class="pkg-price">395 ₺ <span>/ 3 Ay</span></div>
+                <ul class="feature-list">
+                    <li>Daha Uzun Koruma Süresi</li>
+                    <li>%20 Daha Fazla Günlük Bakiye</li>
+                    <li>Destek Taleplerinde Öncelik</li>
+                    <li>Tüm Security Modülleri</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">Hemen Satın Al</a>
+        </div>
+
+        <div class="pricing-card" style="border-color: #ffcc00;">
+            <div>
+                <div class="badge">EN POPÜLER</div>
+                <div class="pkg-name">9 Aylık Premium</div>
+                <div class="pkg-price">990 ₺ <span>/ 9 Ay</span></div>
+                <ul class="feature-list">
+                    <li>Neredeyse Bir Yıl Tam Koruma</li>
+                    <li>Özel Discord Rozeti</li>
+                    <li>Gelişmiş Log Kanalı Erişimi</li>
+                    <li>Ultra VIP Günlük Maaş</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">Hemen Satın Al</a>
+        </div>
+
+        <div class="pricing-card">
+            <div>
+                <div class="badge">ÖMÜR BOYU</div>
+                <div class="pkg-name">Sınırsız Premium</div>
+                <div class="pkg-price">1.980 ₺ <span>/ Tek Sefer</span></div>
+                <ul class="feature-list">
+                    <li>Ömür Boyu Tüm Özellikler</li>
+                    <li>Gelecek Tüm Güncellemeler</li>
+                    <li>Görsel Giriş Kartı Sistemi</li>
+                    <li>Kurucuyla Doğrudan İletişim</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">Hemen Satın Al</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">← Geri Dön</a>
+
+</body>
+</html>
